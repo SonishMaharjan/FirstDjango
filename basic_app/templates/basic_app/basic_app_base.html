@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href={%static "styles/bootstrap.css"%}>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <nav class="navbar navbar-default navbar-static">
+        <ul class="nav navbar-nav">
+          <li> <a class="navbar-brand" href="{%url 'basic_app:list'%}">Schools</a>
+          </li>
+          <li><a class="navbar-brand" href="{%url 'admin:index'%}">Admin</a>
+          </li>
+
+        </ul>
+
+      </nav>
+      {%block body_block%}
+
+      {%endblock%}
+    </div>
+
+  </body>
+</html>
